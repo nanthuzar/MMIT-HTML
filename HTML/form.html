@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+</head>
+<body>
+	<h3>Student Registration Form</h3>
+
+	<fieldset>
+		<legend>Student Registration Form</legend>
+		<form method="GET" action="register.php" enctype="multipart/form-data">
+
+		<label for="name">Name</label>
+		<input type="text" name="stu_name" id="name" required="">
+		<br><br>
+		<label for="email">Email</label>
+		<input type="email" name="stu_email" id="email" placeholder="example@gmail.com">
+		<br><br>
+		<label for="phone">Phone</label>
+		<input type="number" name="stu_phone" id="phone" value="09456789" readonly="">
+		<br><br>
+		<label>Passport Photo</label>
+		<input type="file" name="stu_passport" accept="image/*">
+		<br><br>
+		<label>Gender</label><br>
+		<input type="radio" name="gender" id="male"><label for="male">Male</label>
+		<input type="radio" name="gender" id="female"><label for="female">Female</label>
+		<br><br>
+		<label>Year</label>
+		<select name="year">
+			<option value="First">First Year</option>
+			<option value="Second">Second Year</option>
+			<option value="Third">Third Year</option>
+		</select>
+		<br><br>
+		<label>Hobbies</label>
+		<br>
+		<input type="checkbox" name="travel" id="travel"><label for="travel">Travel</label>
+		<input type="checkbox" name="reading" id="reading"><label for="reading">Reading</label>
+		<input type="checkbox" name="writing" id="writing"><label for="writing">Writing</label>
+		<input type="checkbox" name="listening music" id="listening music"><label for="listening music">Listening Music</label>
+		<br><br>
+		<label for="address">Address</label>
+		<textarea id="address" name="address" rows="10" cols="20"></textarea>
+		<br><br>
+		<!-- <button>Register</button> -->
+		<input type="Submit" name="" value="Register">
+	</form>
+	</fieldset>
+
+	
+</body>
+</html>
+
